@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>practice 1</title>
+  <style>
+    .nav {
+      display: flex;
+      align-items: center;
+      position: sticky;
+      top:0px;
+      gap: 80px;
+      background-color:  rgb(208, 208, 222);;
+      box-shadow: rgba(184, 176, 176, 0.4) 0px 30px 90px;
+    }
+
+    .logo img {
+      width: 100px;
+      margin-left: 70px;
+    }
+
+    .nav_bar li {
+      display: flex;
+      justify-content: center;
+      margin-left: 100px;
+    }
+
+    ul {
+      font-weight: bold;
+    }
+ul:hover{
+  cursor: pointer; color: blue; 
+}
+    .span_div {
+      display: none;
+      width: 15%;
+    }
+
+    .span_div span {
+      font-size: 25px;
+      color: black;
+    }
+
+    .second_div {
+      background-color: rgba(3, 3, 41, 0.984);
+      padding: 50px;
+      text-align: center;
+      color: aliceblue;
+      width: 83%;
+      margin: auto;
+      margin-top: 20px;
+      height: 170px;
+      border-radius: 5px;
+    }
+    button{
+      border: 1px solid black; border-radius: 5px; 
+    }
+    button:hover{
+       background-color: lightskyblue; cursor: pointer; width: 8%; font-size: 90%; height: 20%;
+
+    }
+
+    .third_div {
+      width: 90%;
+      margin: auto;
+
+    }
+
+    .img_div {
+      display: grid;
+      text-align: center;
+      gap: 15px;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    .img_div img {
+      width: 30%;
+      margin-top: 15px;
+    }
+
+    .box_shadow {
+      box-shadow: rgba(199, 189, 189, 0.4) 0px 30px 90px;
+    }
+
+    .box_shadow:hover{
+      cursor: pointer; background-color:  rgb(208, 208, 222);
+      /* color: gold; */
+      
+    }
+    .bottom_div1 {
+      display: grid;
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      
+
+      margin: auto;
+    }
+
+    .bottom_div1 div {
+      padding: 10px;
+
+      text-align: center;
+      box-shadow: rgba(212, 203, 203, 0.4) 0px 30px 90px;
+    }
+    .bottom_div1 div:hover{
+      cursor: pointer; background-color: rgb(208, 208, 222);
+    }
+
+    .bottom_div1 img {
+      width: 20%;
+      padding-top: 15px;
+    }
+
+    .bottom_div2 {
+      display: grid;
+      width: 90%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: auto;
+    }
+
+    .bottom_div2 div {
+      text-align: center;  padding: 10px;
+
+      box-shadow: rgba(210, 200, 200, 0.4) 0px 30px 90px;
+    }
+    .bottom_div2 div:hover{
+      cursor: pointer; background-color: rgb(208, 208, 222);
+    }
+    .bottom_div2 img {
+      width: 20%;
+      padding-top: 15px;
+    }
+
+    @media screen and (min-width:300px) and (max-width:800px) {
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        box-shadow: rgba(184, 176, 176, 0.4) 0px 30px 90px;
+      }
+
+      .logo img {
+        width: 100px;
+        margin-left: 70px;
+      }
+
+      .nav_bar {
+        display: none;
+      }
+
+      .span_div {
+        display: flex;
+        width: 20%;
+      }
+
+      .span_div span {
+        font-size: 25px;
+        color: black; 
+      }
+
+      .second_div {
+        background-color: rgba(3, 3, 41, 0.984);
+        /* padding: 50px; */
+        text-align: center;
+        color: aliceblue;
+        width: 83%;
+        margin: auto;
+        margin-top: 20px;
+        height: 170px;
+        border-radius: 5px;
+      }
+
+      .third_div {
+        width: 90%;
+        margin: auto;
+
+      }
+
+      .img_div {
+        display: grid;
+        text-align: center;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .img_div img {
+        width: 30%;
+        margin-top: 15px;
+      }
+
+      .box_shadow {
+        box-shadow: rgba(199, 189, 189, 0.4) 0px 30px 90px;
+      }
+
+      .bottom_div1 {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: auto;
+      }
+
+      .bottom_div1 div {
+        text-align: center;
+        box-shadow: rgba(212, 203, 203, 0.4) 0px 30px 90px;
+      }
+
+      .bottom_div1 img {
+        width: 20%;
+        padding-top: 15px;
+      }
+
+      .bottom_div2 {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: auto;
+      }
+
+      .bottom_div2 div {
+        text-align: center;
+        box-shadow: rgba(210, 200, 200, 0.4) 0px 30px 90px;
+      }
+
+      .bottom_div2 img {
+        width: 20%;
+        padding-top: 15px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- This is the Navbar  -->
+  <div class="nav">
+    <div class="logo">
+      <img src="./ind money logo.png" alt="" />
+    </div>
+    <div class="nav_bar">
+      <li>
+        <ul>Explore</ul>
+        <ul>Feature</ul>
+        <ul>Pricing</ul>
+        <ul> Block</ul>
+        <ul>Customer Services</ul>
+        <ul>Login</ul>
+      </li>
+    </div>
+    <div class="span_div"><span>&#9776;</span></div>
+  </div>
+  <div class="second_div">
+
+    <h1> Get Free US Stocks Worth Upto 1000*</h1>
+    <h3>on your first US Stocks Finding</h3>
+    <button>Claim</button>
+  </div>
+
+  <div class="third_div">
+    <h2>Invest in top tech stocks </h2>
+    <div class="img_div">
+      <div class="box_shadow"> <img src="./apple logo.png" alt="">
+        <h4>Apple Inc.</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"> <img src="./images/microsoft.png" alt="">
+        <h4>Microsoft</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"> <img src="./images/googlelogo.png" alt="">
+        <h4>Google</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"><img src="./tsmc.jpg" alt="">
+        <h4>Taiwan Semiconductor</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"><img src="./nivida.jpg" alt="">
+        <h4>Nvidia</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"><img src="./images/broadcomlogo.png" alt="">
+        <h4>broadcom Inc.</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"><img src="./j&j.png" alt="">
+        <h4>Johnson & Johnson</h4>
+        <h4>$164.50</h4>
+      </div>
+      <div class="box_shadow"><img src="./merec.png" alt="">
+        <h4>Merckco</h4>
+        <h4>$164.50</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom_div">
+    <h1 style="margin-left: 48px;">Charges outside of INDmoney</h1>
+
+    <h3 style="margin-left: 52px;">US Stocks</h3>
+    <div class="bottom_div1">
+      <div>
+        <img src="./tax 2 img.png" alt="">
+        <h4>Taxation</h4>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quisquam obc
+      </div>
+      <div>
+        <img src="./devidents img.jpeg" alt="">
+        <h4>Dividents</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, consequuntur! Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+      </div>
+      <div>
+        <img src="./tax img.jpeg" alt="">
+        <h4>Tcs</h4>
+        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <h3 style="margin-left: 52px;">Mutual Funds</h3>
+    <div class="bottom_div2">
+      <div>
+        <img src="./expens img.jpeg" alt="">
+        <h4>Expense Ratio </h4>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quam, reprehenderit dolorem nobis obcaecati ipsa
+        accusamus harum sapiente vel explicabo labore tempora consectetur. Iusto culpa hic aut et rem unde!
+        Ipsum, facere quae! Fuga quibusdam quasi et blanditiis maxime vero, magnam provident laborum facilis obcaecati
+        repellendus excepturi nam ut reiciendis explicabo, vitae unde, in impedit repellat aliquid iure culpa quam!
+      </div>
+      <div>
+        <img src="./stamp img.jpeg" alt="">
+        <h4>STT (Stamp Duty)</h4>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat dignissimos eum, est deserunt
+        praesentium omnis aliquid velit maxime dolore perspiciatis, officia accusamus temporibus porro recusandae nobis
+        minus ratione ex!
+        Illum, in! Qui et hic doloremque aspernatur, delectus iusto magnam saepe commodi culpa ipsa, deserunt
+        praesentium reiciendis omnis vero eaque! Laboriosam quaerat,us eaque minima accusantium dicta.
+      </div>
+      <div>
+        <img src="./exit loads img.jpeg" alt="">
+        <h4>Exit Loads</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eaque dolor voluptas nesciunt exercitationem
+        esse eligendi assumenda voluptatum libero dignissimos! Exercitationem fugit vitae repellendus dolor deleniti
+        provident officiis praesentium, pariatur, quae fuga, repudiandae optio sit exercitationem distinctio dolor! Quos
+        possimus ipsum quibusdam!
+      </div>
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
